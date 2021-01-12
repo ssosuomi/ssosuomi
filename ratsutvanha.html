@@ -30,8 +30,6 @@
 <link rel="stylesheet" href="css/screen.css">
 <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="css/jquery.dataTables.min.css" />
-<link rel="stylesheet" href="css/rowReorder.dataTables.min.css" />
-<link rel="stylesheet" href="css/responsive.dataTables.min.css" />
 
 
 <!-- Favicons ==================================================
@@ -102,7 +100,7 @@
   <div class="container">
     <header>
       <h3>Hevoset ja Ponit</h3>
-      <p>- Viimeisin päivitys 12.01.2021 -</p>
+      <p>- Viimeisin päivitys 12.1.2021 -</p>
     </header>
   </div>
   <!-- container ends here -->
@@ -6079,7 +6077,8 @@
 <!-- Datatable stuff -->
 <Script src="js/jquery-3.5.1.js" type="text/javascript"></Script>
 <Script src="js/jquery.dataTables.min.js" type="text/javascript"></Script>
-<Script src="js/dataTables.rowReorder.min.js" type="text/javascript"></Script>
+<Script src="js/dataTables.buttons.min.js" type="text/javascript"></Script>
+<Script src="js/buttons.html5.min.js" type="text/javascript"></Script>
 <Script src="js/dataTables.responsive.min.js" type="text/javascript"></Script>
 
 <Script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"
@@ -6088,11 +6087,6 @@ type="text/javascript"></Script>
 
 
    <script>
-
-
-
-
-
 $("#ratsut").DataTable({
   "order": [[ 1, "asc" ]],
    language: { search: "Etsi:",searchPlaceholder: "Esim. väri", sLengthMenu: "Näytä: _MENU_ " , info: "Sivu _PAGE_ / _PAGES_",
@@ -6103,10 +6097,9 @@ $("#ratsut").DataTable({
                next: 'Seuraava', // or '→'
       previous: 'Edellinen'
     },
- responsive: true
+
     }
 });
-
 
 
     </script>
