@@ -1,5 +1,5 @@
 <?php
-$toemail = 'lumi@hotmail.fi';
+$toemail = 'info@ssosuomi.fi';
 $name = $_POST['name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
