@@ -104,7 +104,14 @@ th {
  height: auto;
 }
 
-
+/* blogiviiva */
+div.line {
+    position: relative;
+    display: inline-block;
+		opacity: 40%;
+    width: 100%;
+    border-bottom: 2px solid #2d2010;
+}
 
 /* popup hidden on default */
 div#popup { display: none; }

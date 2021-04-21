@@ -1024,7 +1024,7 @@ p.gallery {
 	font-weight:bold;
 }
 .post img {
-	margin-bottom:15px;
+	margin-bottom:0px;
 }
 .entry-date {
 	position: absolute;
