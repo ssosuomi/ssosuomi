@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css.css">
+
+
+<title>Form Calc</title>
+
+</head>
+
+<body>
+<div class="container">
+  <form id="form">
+
+
+<div class='form-input'>
+      <label>Herhalingstijd:</label>
+      <input type="text" id="herhal" required/><br>
+</div>
+
+<div class='form-input'>
+      <label>Klimaatfactor:</label>
+      <input type="text" id="klimaat" required/><br>
+</div>
+
+<div class='form-input'>
+    <label>Periode: </label>
+    <input type="text" id="periode" required/><br>
+</div>
+
+</form>
+
+
+<table>
+  <tr>
+    <td>Result 1: </td>
+    <th><span id = "result1"></span></th>
+  </tr>
+
+  <tr>
+    <td>Result 2: </td>
+    <th><span id = "result2"></span></th>
+  </tr>
+
+  <tr>
+    <td>Result 3: </td>
+    <th><span id = "result3"></span></th>
+  </tr>
+
+<!--
+<p>Result 2: <span id = "result2"></span>
+</p>
+
+<p>Result 3: <span id = "result3"></span>
+</p>
+-->
+
+</table>
+
+</div>
+
+</body>
+</html>
+
+<script>
+
+  var numOne = document.getElementById('herhal');
+  var numTwo = document.getElementById('klimaat');
+  var numThree = document.getElementById('periode');
+  var addSum = document.getElementById('result1');numOne.addEventListener('input', add);
+  numTwo.addEventListener('input', add);
+  numThree.addEventListener('input', add);function add() {
+  var one = parseFloat(numOne.value) || 0;
+  var two = parseFloat(numTwo.value) || 0;
+  var three = parseFloat(numThree.value) || 0;
+  addSum.innerText = one+two+three;}
+
+</script>
