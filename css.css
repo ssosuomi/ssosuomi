@@ -15,19 +15,6 @@ body{
 
 }
 
-table{
-
-  padding: 1.3rem 7rem;
-
-}
-
-th {
-  background-color: white;
-  width: 50%;
-  color: black;
-  font-size: 12px;
-
-}
 
 @media(min-width: 576px){
   .container{
@@ -70,11 +57,39 @@ header{
 
 
 }
+table{
 
+  table-layout: fixed;
+   width: 60%;
+   margin-left: 0.3rem;
+   margin-top: 0.5rem;
+}
+
+th {
+
+  color: white;
+  font-size: 12px;
+  padding: 0.7rem 1.2rem;
+
+
+}
+
+th {
+
+  color: white;
+
+}
 
 label {
   float: left;
-  width: 10em;
+  width: 7em;
   margin-right: 1em;
 
+}
+
+span {
+
+  color: white;
+  font-size: 16px;
+  padding: 0.7rem 2rem;
 }
