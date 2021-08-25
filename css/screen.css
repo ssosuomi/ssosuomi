@@ -1374,7 +1374,7 @@ form#contact_form input#email {
 }
 #responsive-menu {
 	display: none;
-	float: left;
+	float: right;
 }
  @media only screen and (max-width: 767px) {
  #mainmenu {
@@ -1384,6 +1384,6 @@ height: 0;
  #responsive-menu {
 display: inline-block;
 width: 100%;
-margin-top: 13px;
+
 }
 }

@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+
+<!-- Basic Page Needs ==================================================
+================================================== -->
+
+<meta charset="utf-8">
+<title>SSO Suomi Sielunratsastus</title>
+<meta name="robots" content="follow" />
+<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+<!-- Mobile Specific Metas ==================================================
+================================================== -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+<!-- CSS ==================================================
+================================================== -->
+
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/skeleton.css">
+<link rel="stylesheet" href="../css/screen.css">
+<link rel="stylesheet" href="../css/prettyPhoto.css" type="text/css" media="screen" />
+
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: none;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: #3171dc;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  font-family:'Oswald', serif;
+  text-transform: uppercase;
+
+
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #33c4ff;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+  color: black;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  background-color: #dbdedf;
+  border-top: none;
+}
+
+.checked {
+  color: orange;
+}
+</style>
+<!-- Favicons ==================================================
+================================================== -->
+
+<link rel="shortcut icon" href="../images/favicon.png">
+
+<!-- Google Fonts ==================================================
+================================================== -->
+<link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+<!--Content Part ==================================================
+================================================== -->
+<div id="header">
+  <div class="container">
+    <!-- Header | Logo, Menu
+		================================================== -->
+    <div class="logo"><a href="index.html"><img src="../images/logo1.png" alt=""  /></a></div>
+    <div class="mainmenu">
+      <div id="mainmenu">
+        <ul class="sf-menu">
+          <li><a href="index.html" id="visited">Index</a></li>
+          <li><a href="spoilers.html">Spoilers</a></li>
+        <!--   <li><a href="blog.html">Uutiset</a></li> -->
+          <li><a href="horses.html">Horses</a></li>
+          <li><a href="guides.html">Guides</a>
+            <ul>
+            <li><a href="stars.html">Stars</a></li>
+            <!--     <li><a href="paikat.html">Paikat</a></li> -->
+                <li><a href="memories.html">Memories</a></li>
+                  <li><a href="tokens.html">Tokens</a></li>
+                    <li><a href="spiders.html">Spiders</a></li>
+                <li><a href="druid.html">Soulriding</a></li>
+                <li><a href="donkeys.html">Lost donkeys</a></li>
+                  <li><a href="brissie.html">Brissie</a></li>
+                <li><a href="halloween.html">Halloween</a></li>
+            </ul>
+            </li>
+      <!--     <li><a href="palaute.html">Palaute</a></li> -->
+        </ul>
+      </div>
+      <div id="languagemenu">
+       <a href="../index.html"><img src="../images/fi.jpg" width="50" height="30"></a>
+      <a href="index.html"><img src="../images/eng.jpg" width="50" height="30">
+      </div>
+      <!-- mainmenu ends here -->
+      <div class="dropdown">
+        <button class="dropbtn">Language</button>
+        <div class="dropdown-content">
+          <a href="index.html">English</a>
+          <a href="../index.html">Suomi</a>
+
+        </div>
+      </div>
+      <!-- Responsive Menu -->
+      <form id="responsive-menu" action="#" method="post">
+        <select>
+          <option value="">Navigation</option>
+          <option value="index.html">Index</option>
+            <option value="spoilers.html">Spoilers</option>
+          <option value="horses.html">Horses</option>
+          <option value="guides.html">Guides</option>
+        <!--   <option value="palaute.html">Palaute</option> -->
+        </select>
+      </form>
+    </div>
+    <!-- mainmenu ends here -->
+  </div>
+  <!-- container ends here -->
+</div>
+<!-- header ends here -->
+<!--Breadcrumbs ==================================================
+================================================== -->
+<div class="breadcrumbs">
+  <div class="container">
+    <header>
+
+
+    </header>
+  </div>
+  <!-- container ends here -->
+  <hr class="separator1">
+</div>
+<!-- breadcrumbs ends here -->
+<!-- Portfolio ==================================================
+================================================== -->
+<div class="container">
+
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Intro')" id="defaultOpen">Sielunratsastus</button>
+    <button class="tablinks" onclick="openCity(event, 'Koulutus')">Koulutus</button>
+    <button class="tablinks" onclick="openCity(event, 'Tehut')">Tehtävät</button>
+    <button class="tablinks" onclick="openCity(event, 'Palkinnot')">Palkinnot</button>
+  </div>
+
+  <div id="Intro" class="tabcontent">
+
+    <p>  <img src="images/druidi/dudu.jpg" alt="intro" /></p>
+
+    <p>Voit nyt opetella Riannan johdolla muinaista ratsastustaitoa, jota kutsutaan ”sieluratsastukseksi”.
+      Sieluratsastus ammentaa taikavoimansa ratsastajan ja hänen ratsunsa välisestä siteestä, ja sen avulla voit auttaa tietäjiä suojelemaan Jorvikia vaarallisilta voimilta,
+      kuten Pandorialta tai Pimeyden ytimeltä!
+      <br><br>
+
+Voit valita tietäjien hevoshaan ilmoitustaululta erityisiä harjoituksia, ja kun olet kehittynyt riittävästi, Rianna laajentaa koulutustasi lähettämällä sinut suorittamaan erityistehtäviä eri puolelle Jorvikia ja saat saarta suojelemalla erilaisia palkintoja.
+</p>
+
+  </div>
+
+
+  <div id="Koulutus" class="tabcontent">
+    <table id="tehut">
+
+  <tr>
+  <td>
+  <img src="images/druidi/tarkkuus.jpg" alt="tarkkuus" />
+  </td>
+  <td>
+    <h3>Tarkkuusratsastus</h3>
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+    <br>
+    <br>
+Tarkkuusratsastuksessa tehtävänäsi on ratsastaa annetut reitit nuolia seuraamalla mahdollisimman tarkasti ennen kuin aika kuluu umpeen. <br><br>Epäonnistut tehtävässä mikäli et ratsasta tarkasti annettujen ohjeiden mukaan.
+  </td>
+  </tr>
+
+  <tr>
+  <td>
+  <img src="images/druidi/estekaruselli.jpg" alt="estekaruselli" />
+  </td>
+  <td>
+    <h3>Estekaruselli</h3>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+        <br>
+        <br>
+Estekarusellissa tehtävänäsi on ratsastaa kehää ympäri esteitä hypäten ja punaista puomia vältellen. Helpoimmin onnistut kevyessä laukassa ulkoreunalla ratsastaen. <br><br> Epäonnistut tehtävässä mikäli kosketat esteeseen tai punaiseen valopuomiin.
+  </td>
+  </tr>
+
+  <tr>
+  <td>
+  <img src="images/druidi/ratsastusreitti.jpg" alt="estekaruselli" />
+  </td>
+  <td>
+    <h3>Ratsastusreitin vaihtaminen</h3>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+        <br>
+        <br>
+Tehtävänäsi on ratsastaa merkityllä reitillä ja vaihtaa reittiä kun kuulet äänimerkin ja ruudulle ilmestyy teksti "*pelaaja* vaihda kaistaa nyt!" <br><br> Epäonnistut tehtävässä mikäli vaihdat reittiä liian hitaasti.
+  </td>
+  </tr>
+
+  <tr>
+  <td>
+  <img src="images/druidi/varjot.jpg" alt="varjot" />
+  </td>
+  <td>
+    <h3>Varjojen välttely</h3>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+        <br>
+    <br>
+    Tehtävänäsi on vältellä varjoja kunnes annettu aika kuluu umpeen.
+ <br><br> Epäonnistut tehtävässä mikäli kosketat varjoa.
+  </td>
+  </tr>
+
+  <tr>
+  <td>
+  <img src="images/druidi/kohde.jpg" alt="kohde" />
+  </td>
+  <td>
+    <h3>Kohteen perässä pysyminen</h3>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+        <br>
+    <br>
+    Tehtävänäsi on seurata kohdetta mahdollisimman lähellä. Helpoimmin onnistut hitaassa laukassa hieman kohteen perässä tai vierellä.
+ <br><br> Epäonnistut tehtävässä mikäli et saa kohteen "paniikki-/turmeltumistasoa" alas ennen ajan päättymistä.
+  </td>
+  </tr>
+
+  <tr>
+  <td>
+  <img src="images/druidi/haamuvalot.jpg" alt="haamuvalot" />
+  </td>
+  <td>
+    <h3>Haamuvalojen kerääminen</h3>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+        <br>
+    <br>
+    Tehtävänäsi on kerätä 20 haamuvaloa ennen kuin aika kuluu umpeen.
+ <br><br> Epäonnistut tehtävässä mikäli et saa kerättyä kahtakymmentä haamuvaloa ennen ajan päättymistä.
+  </td>
+  </tr>
+
+  <tr>
+  <td>
+  <img src="images/druidi/salamat.jpg" alt="salamat" />
+  </td>
+  <td>
+    <h3>Salamoiden väistely</h3>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+        <br>
+    <br>
+    Tehtävänäsi on vältellä maahan ilmestyviä liekkejä kunnes annettu aika päättyy. Tehtävä on helpointa suorittaa laukkaamalla hitaasti lähellä kehän reunaa.
+ <br><br> Epäonnistut tehtävässä mikäli osut liekkiin.
+  </td>
+  </tr>
+
+  <tr>
+  <td>
+  <img src="images/druidi/aallot.jpg" alt="aallot" />
+  </td>
+  <td>
+    <h3>Paineaaltojen väistely</h3>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+        <br>
+    <br>
+    Tehtävänäsi on vältellä liekkejä. Suoritat tehtävän helpoiten laukkaamalla kehän keskiosassa ja hyppäämällä aaltojen yli kun ne tulevat lähemmäs.
+ <br><br> Epäonnistut tehtävässä mikäli osut liekkiin.
+  </td>
+  </tr>
+
+  <tr>
+  <td>
+  <img src="images/druidi/merkit.jpg" alt="symboli" />
+  </td>
+  <td>
+    <h3>Valitse symboli</h3>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+        <br>
+    <br>
+    Tehtävänäsi on juosta annetun symbolin päälle ennen kuin aika kuluu umpeen. Tehtävä on suoritettu kun olet valinnut oikein kahdeksan symbolia.
+ <br><br> Epäonnistut tehtävässä mikäli et ehdi annetun symbolin luo annetun ajan puitteissa, tai valitset väärän symbolin.
+  </td>
+  </tr>
+
+
+</table>
+  </div>
+
+  <div id="Tehut" class="tabcontent">
+    <table id="tehut">
+
+  <tr>
+  <td>
+  <img src="images/druidi/virvatulet.jpg" alt="virvatulet" />
+  </td>
+  <td>
+    <h3>Kerää virvatulia</h3>
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+    <br>
+    <br>
+Tehtävänäsi on kerätä 40 virvatulta ennenkuin aika päättyy.<br><br>Epäonnistut tehtävässä mikäli et kerää kaikkia virvatulia ennen ajan päättymistä.
+  </td>
+  </tr>
+
+  <tr>
+  <td>
+  <img src="images/druidi/pelastus.jpg" alt="pelastus" />
+  </td>
+  <td>
+    <h3>Pelasta hevonen!</h3>
+
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+    <br>
+    <br>
+  Tehtävänäsi on rauhoitella pelästynyt hevonen juoksemalla sen vierellä kunnes paniikkitaso-palkki on tyhjä. <br><br>Epäonnistut tehtävässä mikäli et suorita tehtävää ennen ajan päättymistä.
+  </td>
+  </tr>
+
+  <tr>
+  <td>
+  <img src="images/druidi/drakonium.jpg" alt="drakonium" />
+  </td>
+  <td>
+    <h3>Kerää Drakonium-rahti</h3>
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+    <br>
+    <br>
+Tehtävänäsi on kerätä 30 drakonium-kiveä. Välttele kipinöiviä kiviä, ja kerää tummansiniset kivet jotka eivät säkenöi.
+ <br><br>Epäonnistut tehtävässä mikäli et kerää kolmeakymmentä kiveä ennen ajan päättymistä. Jokaisesta osumasta kipinöivaan kiveen menetät 20 sekuntia.
+  </td>
+  </tr>
+
+  <tr>
+  <td>
+  <img src="images/druidi/turmeltunut.jpg" alt="turmeltunut hevonen" />
+  </td>
+  <td>
+    <h3>Pelasta turmeltunut hevonen!</h3>
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+    <br>
+    <br>
+Tehtävänäsi on pelastaa turmeltunut hevonen ennen kuin aika kuluu umpeen. Tämä hevonen juoksee todella nopeaa! Samalla kun juokset hevosen vierellä sinun pitää väistellä
+kipinöitä tai varjoja.
+
+<br><br>Epäonnistut tehtävässä mikäli et saa pelastettua hevosta ennen ajan päättymistä. Jokaisesta osumasta kipinöivään kiveen menetät 20sec. Jos osut varjoon, se lähtee seuraamaan sinua, toisesta osumasta
+menetät 20 sekuntia.
+  </td>
+  </tr>
+
+  <tr>
+  <td>
+  <img src="images/druidi/kone.jpg" alt="kone" />
+  </td>
+  <td>
+    <h3>Sulje Pimeyden ytimen kone</h3>
+
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+    <br>
+    <br>
+  Tehtävänäsi on kerätä 4 violettia valopalloa ja iskeä Pimeyden ytimen konetta. Samalla sinun täytyy vältellä kipinöitä, varjoja tai droneja. Kun olet iskenyt konetta kolme kertaa olet suorittanut tehtävän.
+
+    <br><br>Epäonnistut tehtävässä mikäli et saa konetta rikki annetun ajan puitteissa. Osuma kipinään vie sinulta 20 sekuntia. Ensimmäinen osuma varjoon tai droneen saa sen seuraamaan sinua, toisella iskulla menetät 20 sekuntia.
+  </td>
+  </tr>
+
+  <tr>
+  <td>
+  <img src="images/druidi/agentti.jpg" alt="agentti" />
+  </td>
+  <td>
+    <h3>Pelasta vakoojamestarin agentti!</h3>
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+    <br>
+    <br>
+    Tehtävänäsi on pelastaa vakoojamestarin agentti ennen kuin aika kuluu umpeen. Tämä drone tekee nopeita käännöksiä! Samalla kun juokset dronen vierellä sinun pitää väistellä
+    kipinöitä tai varjoja.
+
+    <br><br>Epäonnistut tehtävässä mikäli et saa pelastettua agenttia ennen ajan päättymistä. Jokaisesta osumasta tuleen menetät 20sec. Jos osut varjoon, se lähtee seuraamaan sinua, toisesta osumasta
+    menetät 20 sekuntia.
+  </td>
+  </tr>
+
+  <tr>
+  <td>
+  <img src="images/druidi/leijupinjat.jpg" alt="leijupinjat" />
+  </td>
+  <td>
+    <h3>Kerää jorvikilaisia leijupinjoja</h3>
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+    <br>
+    <br>
+Tehtävänäsi on kerätä 25 leijupinjaa ennen kuin aika kuluu umpeen. Etsi leijupinjoja jotka ovat vielä maassa tai juuri lähtemässä lentoon ja ratsasta niiden yli. <br><br>Epäonnistut tehtävässä mikäli et saa kerättyä kahtakymmentäviittä leijupinjaa ennen kuin aika kuluu loppuun.
+  </td>
+  </tr>
+
+  <tr>
+  <td>
+  <img src="images/druidi/portaali.jpg" alt="leijupinjat" />
+  </td>
+  <td>
+    <h3>Sulje pandorialainen repeämä</h3>
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+    <br>
+    <br>
+    Tehtävänäsi on kerätä 4 violettia valopalloa ja iskeä pandorialaista portaalia. Samalla sinun täytyy vältellä kipinöitä, varjoja tai droneja. Kun olet iskenyt portaalia kolme kertaa olet suorittanut tehtävän.
+
+      <br><br>Epäonnistut tehtävässä mikäli et saa portaalia suljettua annetun ajan puitteissa. Osuma kipinään vie sinulta 20 sekuntia. Ensimmäinen osuma varjoon tai droneen saa sen seuraamaan sinua, toisella iskulla menetät 20 sekuntia.
+    </td>
+  </tr>
+
+  <tr>
+  <td>
+  <img src="images/druidi/olennot.jpg" alt="olennot" />
+  </td>
+  <td>
+    <h3>Auta pandorialaiset olennot takaisin kotiinsa</h3>
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+    <br>
+    <br>
+    Tehtävänäsi on kerätä 40 rauskua ja vältellä varjoja.
+
+      <br><br>Epäonnistut tehtävässä mikäli et saa neljääkymmentä rauskua kerättyä annetun ajan puitteissa. Ensimmäinen osuma varjoon saa sen seuraamaan sinua, toisella iskulla menetät 20 sekuntia.
+    </td>
+  </tr>
+
+
+  </table>
+  </div>
+
+  <div id="Palkinnot" class="tabcontent">
+    <table id="palkinnot">
+
+      <thead>
+          <tr>
+              <th width="70px;"></th>
+              <th width="180px">Pisteet</th>
+              <th>Kuvaus</th>
+          </tr>
+      </thead>
+
+
+<tr>
+<td>
+<img src="images/druidi/hanskat.jpg" alt="hanskat" />
+</td>
+<td>
+500
+</td>
+<td>
+Pohjoisen tietäjän hansikkaat <br> (Ratsastaa +4 Ohjaus +4 Huolenpito +1 )
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="images/druidi/kirja.jpg" alt="kirja" />
+</td>
+<td>
+1000
+</td>
+<td>
+Kirja
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="images/druidi/paketti.jpg" alt="description here" />
+</td>
+<td>
+3000
+</td>
+<td>
+Paketti
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="images/druidi/bootsit.jpg" alt="kengät" />
+</td>
+<td>
+5000
+</td>
+<td>
+Pohjoisen tietäjän kengät <br> (Ratsastaa +4 Hyppääminen +4)
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="images/druidi/paketti.jpg" alt="description here" />
+</td>
+<td>
+10 000
+</td>
+<td>
+Lisätehtäviä ilmoitustaululle
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="images/druidi/ripa2.jpg" alt="otsanauha" />
+</td>
+<td>
+13 000
+</td>
+<td>
+Pohjoisen tietäjän otsanauha <br> (koriste)
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="images/druidi/paketti.jpg" alt="description here" />
+</td>
+<td>
+15 000
+</td>
+<td>
+paketti
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="images/druidi/kirja.jpg" alt="kirja" />
+</td>
+<td>
+17 000
+</td>
+<td>
+Kertomusten kirja
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="images/druidi/housut.jpg" alt="housut" />
+</td>
+<td>
+20 000
+</td>
+<td>
+Pohjoisen tietäjän housut <br> (Ratsastaa +5 Hyppääminen +5 Ohjaus +3)
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="images/druidi/paketti.jpg" alt="description here" />
+</td>
+<td>
+25 000
+</td>
+<td>
+Paketti
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="images/druidi/kirja.jpg" alt="kirja" />
+</td>
+<td>
+27 000
+</td>
+<td>
+Kirja
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="images/druidi/liivi.jpg" alt="liivi" />
+</td>
+<td>
+30 000
+</td>
+<td>
+Pohjoisen tietäjän takki <br> (Ratsastaa +8 Hyppääminen +1 Ohjaus +4)
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="images/druidi/kirja.jpg" alt="kirja" />
+</td>
+<td>
+33 000
+</td>
+<td>
+Kirja
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="images/druidi/laukku.jpg" alt="laukku" />
+</td>
+<td>
+35 000
+</td>
+<td>
+Pohjoisen tietäjän satulalaukku
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="images/druidi/kirja.jpg" alt="kirja" />
+</td>
+<td>
+40 000
+</td>
+<td>
+Kirja
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="images/druidi/paketti.jpg" alt="description here" />
+</td>
+<td>
+42 000
+</td>
+<td>
+Paketti
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="images/druidi/kirja.jpg" alt="kirja" />
+</td>
+<td>
+45 000
+</td>
+<td>
+Kirja
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="images/druidi/suitset.jpg" alt="suitset" />
+</td>
+<td>
+50 000
+</td>
+<td>
+Pohjoisen tietäjän suitset <br> (Nopeus +3 Ketteryys +1)
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="images/druidi/paketti.jpg" alt="description here" />
+</td>
+<td>
+53 000
+</td>
+<td>
+Paketti
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="images/druidi/kirja.jpg" alt="kirja" />
+</td>
+<td>
+56 000
+</td>
+<td>
+Kirja
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="images/druidi/pintelit.jpg" alt="pintelit" />
+</td>
+<td>
+60 000
+</td>
+<td>
+Pohjoisen tietäjän pintelit
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="images/druidi/paketti.jpg" alt="description here" />
+</td>
+<td>
+65 000
+</td>
+<td>
+Paketti
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="images/druidi/kirja.jpg" alt="kirja" />
+</td>
+<td>
+70 000
+</td>
+<td>
+Kirja
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="images/druidi/huopa.jpg" alt="satulahuopa" />
+</td>
+<td>
+80 000
+</td>
+<td>
+Pohjoisen tietäjän satulahuopa <br> (Nopeus +3 Ketteryys +1)
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="images/druidi/paketti.jpg" alt="description here" />
+</td>
+<td>
+82 000
+</td>
+<td>
+Paketti
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="images/druidi/kirja.jpg" alt="kirja" />
+</td>
+<td>
+85 000
+</td>
+<td>
+Kirja
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="images/druidi/satula.jpg" alt="satula" />
+</td>
+<td>
+90 000
+</td>
+<td>
+Satula <br> (Voima +1 Nopeus +3 Ketteryys +2)
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="images/druidi/paketti.jpg" alt="description here" />
+</td>
+<td>
+95 000
+</td>
+<td>
+Paketti
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="images/druidi/kirja.jpg" alt="kirja" />
+</td>
+<td>
+100 000
+</td>
+<td>
+Kirja
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="images/druidi/riimukirmaaja.jpg" alt="riimukirmaaja" />
+</td>
+<td>
+120 000
+</td>
+<td>
+Riimukirmaaja
+</td>
+</tr>
+
+</table>
+  </div>
+
+
+</div>
+
+<!-- Socialize ==================================================
+================================================== -->
+<hr class="separator2">
+<div class="socialsblock">
+  <div class="container socialize">
+    <h3></h3>
+    <section class="socials">
+      <ul class="socials">
+        <li><a href="#"><img src="../images/socials/twitter.png" alt="" /></a></li>
+        <li><a href="#"><img src="../images/socials/facebook.png" alt="" /></a></li>
+        <li><a href="#"><img src="../images/socials/youtube.png" alt="" /></a></li>
+
+      </ul>
+    </section>
+  </div>
+  <!-- container ends here -->
+</div>
+<!-- socialsblock ends here -->
+<!-- Footer ==================================================
+================================================== -->
+<div class="footer">
+  <div class="container">
+    <div class="one_fourth">
+      <h3>Owner</h3>
+      <p><span class="orange"><strong>Character:</strong></span> <br>
+        Drew Moonmoon <br> (Apricot Arbor)</p>
+      <p><span class="orange"><strong>Email:</strong></span> <br>
+        info@ssosuomi.fi<br>
+      </p>
+    </div>
+    <!-- four columns ends here -->
+    <div class="one_fourth">
+      <h3>Links</h3>
+      <ul>
+        <li><a href="index.html" title="">Index</a></li>
+        <li><a href="horses.html" class="">Horses</a></li>
+        <li><a href="guides.html" class="">Guides</a></li>
+    <!--    <li><a href="#" class="">Kartta</a></li> -->
+      </ul>
+    </div>
+    <div class="one_fourth">
+      <h3>FAQ</h3>
+      <ul>
+      <!--  <li><a href="blog.html" title="">Uutiset</a></li> -->
+        <li><a href="drew.html" class="">Owner</a></li>
+        <li><a href="https://northernwarriorsarmy.weebly.com" class="">Club</a></li>
+        <li><a href="mailto:info@ssosuomi.fi" class="">Contact me</a></li>
+      </ul>
+    </div>
+
+    <div class="one_fourth lastcolumn">
+      <h3>Shortly</h3>
+      <p>SSOSuomi is a Star Stable Online fansite.  <br> <br>
+  Fron the page you can find helpful tips and guides to search stars, Tokens and other secrets.</p>
+    </div>
+    <!-- four columns ends here -->
+  </div>
+  <!-- container ends here -->
+</div>
+<!-- footer ends here -->
+<!-- Copyright ==================================================
+================================================== -->
+<div id="copyright">
+  <div class="container">
+    <p class="copyright">&copy; Copyright 2019-2021. &quot;SSO-Suomi&quot; by <a href="https://www.ssosuomi.fi" rel="nofollow">Moon Moon</a>. <a href="https://starstable.com"> Star Stable Online </a> game content and materials are trademarks and copyrights of their respective owners. This site is a fansite and is not affiliated with the game publisher.</p>
+  </div>
+  <!-- container ends here -->
+</div>
+<!-- copyright ends here -->
+<!-- End Document
+================================================== -->
+<!-- Scripts ==================================================
+================================================== -->
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+</script>
+
+<script src="../js/jquery-1.8.0.min.js" type="text/javascript"></script>
+<!-- Main js files -->
+<script src="../js/screen.js" type="text/javascript"></script>
+<!-- Tabs -->
+<script src="../js/tabs.js" type="text/javascript"></script>
+<!-- Include prettyPhoto -->
+<script src="../js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<!-- Include Superfish -->
+<script src="../js/superfish.js" type="text/javascript"></script>
+<script src="../js/hoverIntent.js" type="text/javascript"></script>
+<!-- Flexslider -->
+<script src="../js/jquery.flexslider-min.js" type="text/javascript"></script>
+<!-- Modernizr -->
+<script type="text/javascript" src="../js/modernizr.custom.29473.js"></script>
+</body>
+</html>
