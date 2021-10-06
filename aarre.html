@@ -11,7 +11,7 @@
 ================================================== -->
 
 <meta charset="utf-8">
-<title>SSO Suomi oppaat</title>
+<title>SSO Suomi Syntymäpäivät</title>
 <meta name="robots" content="follow" />
 <!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -35,6 +35,7 @@
 
 <link rel="shortcut icon" href="images/favicon.png">
 
+
 <!-- Google Fonts ==================================================
 ================================================== -->
 <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
@@ -47,19 +48,18 @@
   <div class="container">
     <!-- Header | Logo, Menu
 		================================================== -->
-<div class="logo"><a href="index.html"><img src="images/logo1.png" alt=""  /></a></div>
+   <div class="logo"><a href="index.html"><img src="images/logo1.png" alt=""  /></a></div>
     <div class="mainmenu">
       <div id="mainmenu">
         <ul class="sf-menu">
           <li><a href="index.html">Etusivu</a></li>
-          <li><a href="spoilerit.html">Spoilerit</a></li>
-          <!--   <li><a href="blog.html">Uutiset</a></li> -->
+            <li><a href="spoilerit.html"id="visited">Spoilerit</a></li>
           <li><a href="ratsut.html">Ratsut</a></li>
-          <li><a href="oppaat.html" id="visited">Oppaat</a>
+          <li><a href="oppaat.html">Oppaat</a>
             <ul>
-              <!--   <li><a href="tahdet.html">Tähdet</a></li> -->
+            <li><a href="tahdet.html">Tähdet</a></li>
               <!--     <li><a href="paikat.html">Paikat</a></li> -->
-              <!--     <li><a href="toksut.html">Toksut</a></li> -->
+
                 <li><a href="muistot.html">Muistot</a></li>
                   <li><a href="toksut.html">Toksut</a></li>
                     <li><a href="spiders.html">Hämähäkit</a></li>
@@ -69,7 +69,7 @@
                 <li><a href="halloween.html">Halloween</a></li>
             </ul>
             </li>
-        <!--     <li><a href="palaute.html">Palaute</a></li> -->
+          <!--     <li><a href="palaute.html">Palaute</a></li> -->
         </ul>
       </div>
       <!-- mainmenu ends here -->
@@ -82,7 +82,7 @@
             <option value="spoilerit.html">Spoilerit</option>
           <option value="ratsut.html">Ratsut</option>
           <option value="oppaat.html">Oppaat</option>
-            <!--   <option value="palaute.html">Palaute</option> -->
+        <!--   <option value="palaute.html">Palaute</option> -->
         </select>
       </form>
     </div>
@@ -93,94 +93,206 @@
 <!-- header ends here -->
 <!--Breadcrumbs ==================================================
 ================================================== -->
+
 <div class="breadcrumbs">
   <div class="container">
-    <header>
 
-
-    </header>
-  </div>
-  <!-- container ends here -->
   <hr class="separator1">
-</div>
+
 <!-- breadcrumbs ends here -->
-<!-- Portfolio ==================================================
+<!-- Blog ==================================================
 ================================================== -->
-<div class="container portfolio">
-  <div class="one_third shadow">
-    <div class="mask">
-      <a href="tahdet.html"> <img src="images/uutiset/star1.png" alt="alt" /> </a>
-        <h2><a href="tahdet.html">Kultatähdet</a></h2>
-      </div>
-    </div>
+<style>
+td {
+	text-align: left;
+  }
 
-  <div class="one_third shadow">
-      <div class="mask">
-        <a href="toksut.html"> <img src="images/uutiset/toksu.jpg" alt="alt" /> </a>
-        <h2><a href="toksut.html">Toksun matkat</a></h2>
-      </div>
-  </div>
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
 
-  <div class="one_third lastcolumn shadow">
-      <div class="mask">
-        <a href="spiders.html"> <img src="images/uutiset/spider.jpg" alt="alt" /> </a>
-        <h2><a href="spiders.html">Hämähäkit</a></h2>
-      </div>
-    </div>
 
-  <div class="one_third shadow">
-      <div class="mask">
-        <a href="muistot.html"> <img src="images/uutiset/perhonen.jpg" alt="alt" /> </a>
-        <h2><a href="muistot.html">Katriinan muistot</a></h2>
-      </div>
-    </div>
+<h2 style="text-align:center;">Aarejahti 1</h2>
+<hr class="separator1">
 
-  <div class="one_third shadow">
-      <div class="mask">
-        <a href="druidi.html"> <img src="images/uutiset/druidi.jpg" alt="alt" /> </a>
-        <h2><a href="druidi.html">Sielunratsastus</a></h2>
-      </div>
-  </div>
+    <table id="palkinnot" >
+        <thead>
+            <tr>
+                <th>Vihje</th>
+                <th>Paikka</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1. Kärtty ukko. Erinomainen tanssija. Talon sisällä!</td>
+                <td>Jasperin ladon sisällä</td>
+            </tr>
 
-  <div class="one_third lastcolumn shadow">
-      <div class="mask">
-        <a href="aasit.html"> <img src="images/uutiset/aasinc.png" alt="alt" /> </a>
-        <h2><a href="aasit.html">Kadonneet aasit</a></h2>
-      </div>
-  </div>
+            <tr>
+                <td>2. Valon torni. Merimiesten turva! Korkea!</td>
+                <td>Moorlandin majakka</td>
+            </tr>
 
-  <div class="one_third shadow">
-    <div class="mask">
-      <a href="brissa.html"> <img src="images/uutiset/brissa.jpg" alt="alt" /> </a>
-      <h2><a href="brissa.html">Brissan seikkailut</a></h2>
-    </div>
-  </div>
+            <tr>
+                <td>3. Seppä takoo alasinta! Metallia!</td>
+                <td>Sepon takomo</td>
+            </tr>
 
-  <div class="one_third shadow">
-    <div class="mask">
-      <a href="halloween.html"> <img src="images/uutiset/kurpitsa.jpg" alt="alt" /> </a>
-      <h2><a href="halloween.html">Halloween-kurpitsat</a></h2>
-    </div>
-  </div>
+            <tr>
+                <td>4. Paikka, jossa saavuit tähän peliin</td>
+                <td>Moorlandin tallin sisäpiha</td>
+            </tr>
 
-  <div class="one_third lastcolumn shadow">
-      <div class="mask">
-        <a href="bday.html"> <img src="images/uutiset/kakku.jpg" alt="alt" /> </a>
-        <h2><a href="bday.html">Syntymäpäivävisa</a></h2>
-      </div>
-  </div>
+            <tr>
+                <td>5. Vanha nainen! Moorlandista itään! Punainen talo!</td>
+                <td>Mummonmökki Moorlandin rannalla</td>
+            </tr>
 
+
+        </tbody>
+    </table>
+
+
+
+  <div class="line"></div>
   <hr class="separator1">
 
-  <div class="one_third shadow">
-    <div class="mask">
-      <a href="aarre.html"> <img src="images/uutiset/treasure.jpg" alt="alt" /> </a>
-      <h2><a href="aarre.html">Syntymäpäivien aarrejahti</a></h2>
-    </div>
-  </div>
 
-  </div>
+  <h2 style="text-align:center;">Aarrejahti 2</h2>
+  <hr class="separator1">
 
+      <table id="palkinnot" >
+          <thead>
+              <tr>
+                  <th>Vinkki</th>
+                  <th>Paikka</th>
+              </tr>
+          </thead>
+          <tbody>
+
+              <tr>
+                  <td>1. Pintan linnoitus! Pysäkki!</td>
+                  <td>Pintan linnoituksen pysäkillä</td>
+              </tr>
+
+              <tr>
+                  <td>2. Yksinäinen kanuunaparka!</td>
+                  <td>Pintan linnoituksen muurilla tornin päällä</td>
+              </tr>
+
+              <tr>
+                  <td>3. Iso puu! Markkinoiden hevoset pitävät siitä!</td>
+                  <td>Hevosmarkkinoiden lähellä korkean puun rungossa</td>
+              </tr>
+
+              <tr>
+                  <td>4. Vesi pelottaa! Pienikin roiskahdus ruostuttaa!</td>
+                  <td>Laivassa ponien myyntipaikalla</td>
+              </tr>
+
+              <tr>
+                  <td>5. Nyt kädet heilumaan! On biletyksen aika!</td>
+                  <td>Pintan diskossa</td>
+              </tr>
+
+
+          </tbody>
+      </table>
+
+      <div class="line"></div>
+      <hr class="separator1">
+
+
+      <h2 style="text-align:center;">Aarrejahti 3</h2>
+      <hr class="separator1">
+
+          <table id="palkinnot" >
+              <thead>
+                  <tr>
+                      <th>Vihje</th>
+                      <th>Paikka</th>
+                  </tr>
+              </thead>
+              <tbody>
+
+                  <tr>
+                      <td>1. Mennään rannalle! Kodikas paikka!</td>
+                      <td>Moorin rannalla nuotiopaikalla</td>
+                  </tr>
+
+                  <tr>
+                      <td>2. Klink klank, kolisee hakku! Kivinen meininki!</td>
+                      <td>Demascuksen kaivos</td>
+                  </tr>
+
+                  <tr>
+                      <td>3. Mitä oikein rakennat? Paljon rakennuskalustoa!</td>
+                      <td>C.E.D:in rakennusmaa Moorissa</td>
+                  </tr>
+
+                  <tr>
+                      <td>4. Kyltti! Tämä on kyltissä! Johtaa kaivokseen!</td>
+                      <td>Ilvesten kisojen vieressä opaskyltissä</td>
+                  </tr>
+
+                  <tr>
+                      <td>5. Kaksi kiveä lähes koskettaa toisiaan!</td>
+                      <td>Moorin kisaradalla, kallioilla lähellä rantaa</td>
+                  </tr>
+
+
+              </tbody>
+          </table>
+
+          <div class="line"></div>
+          <hr class="separator1">
+
+
+          <h2 style="text-align:center;">Aarrejahti 4</h2>
+          <hr class="separator1">
+
+              <table id="palkinnot" >
+                  <thead>
+                      <tr>
+                          <th>Vihje</th>
+                          <th>Paikka</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+
+                      <tr>
+                          <td>1. Siltaa rakennetaan! Onpa paljon puuta!</td>
+                          <td>Puusilta Moorin ja Sadonkorjuuseudun välissä</td>
+                      </tr>
+
+                      <tr>
+                          <td>2. Suuri mies lepää täällä! Onko se hauta vai luola?</td>
+                          <td>Jon Jaarlin hauta lähellä luostarin raunioita</td>
+                      </tr>
+
+                      <tr>
+                          <td>3. Yksinäinen Vene! Sinisiä laatikoita!</td>
+                          <td>Venelaituri lähellä ponikisaa</td>
+                      </tr>
+
+                      <tr>
+                          <td>4. Sydämellinen paikka! Suurempi menneinä aikoina!</td>
+                          <td>Doylen luostari</td>
+                      </tr>
+
+
+
+                  </tbody>
+              </table>
+
+
+
+
+</div>
+</div>
+
+<!-- container ends here -->
 <!-- Socialize ==================================================
 ================================================== -->
 <hr class="separator2">
@@ -189,15 +301,15 @@
     <h3></h3>
     <section class="socials">
       <ul class="socials">
-        <li><a href="#"><img src="images/socials/twitter.png" alt="" /></a></li>
+       <li><a href="#"><img src="images/socials/twitter.png" alt="" /></a></li>
         <li><a href="#"><img src="images/socials/facebook.png" alt="" /></a></li>
         <li><a href="#"><img src="images/socials/youtube.png" alt="" /></a></li>
       </ul>
     </section>
   </div>
-  <!-- container ends here -->
+
 </div>
-<!-- socialsblock ends here -->
+
 <!-- Footer ==================================================
 ================================================== -->
 <div class="footer">
@@ -205,7 +317,7 @@
     <div class="one_fourth">
       <h3>Tekijä</h3>
       <p><span class="orange"><strong>Pelinimi:</strong></span> <br>
-        Drew Moonmoon <br> (Apricot Harbor)</p>
+        Drew Moonmoon<br> (Apricot Harbor)</p>
       <p><span class="orange"><strong>Email:</strong></span> <br>
         info@ssosuomi.fi<br>
       </p>
