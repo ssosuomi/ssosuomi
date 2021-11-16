@@ -186,7 +186,7 @@ li a#visited {
 }
 /*** submenu ***/
 .sf-menu li ul {
-	background:#261b0d url(../images/rausch.png) repeat;
+	background:var(--header-color) url(../images/rausch.png) repeat;
 	border-top:3px solid #e8ded1;
 	margin-top:75px;
 }
@@ -208,6 +208,7 @@ li a#visited {
 }
 .sf-menu li ul li a:hover {
 	padding-left: 18px;
+	background:var(--tabhover-color)
 }
 /* apply hovers to modern browsers */
 a:focus > .sf-sub-indicator, a:hover > .sf-sub-indicator, a:active > .sf-sub-indicator, li:hover > a > .sf-sub-indicator, li.sfHover > a > .sf-sub-indicator {
