@@ -6,7 +6,28 @@
 <html lang="en">
 <!--<![endif]-->
 <head>
+  <style>
+    body {
+      visibility: hidden;
+      opacity: 0;
+      
+    }
+  </style>
+  <script>
+  function showTheme() {
+  // Check Local Storage then apply dark theme if it's active
+}
 
+function showContent() {
+  document.body.style.visibility = 'visible';
+  document.body.style.opacity = 1;
+}
+
+window.addEventListener('DOMContentLoaded', function () {
+  showTheme();
+  showContent();
+});
+  </script>
 <!-- Basic Page Needs ==================================================
 ================================================== -->
 
