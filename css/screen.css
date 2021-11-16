@@ -1,5 +1,41 @@
 /****************************** MAIN STYLES - background,dividers ******************************/
 
+:root {
+	 --primary-color: #2d2010;
+	 --secondary-color: #536390;
+	 --font-color: #424242;
+	 --title-color: #261b0d;
+	 --h4-color: #543d1f;
+	 --h5-color: #543d1f;
+	 --h6-color: #fff;
+	 --bg-color: #fff;
+	 --header-color: #261b0d;
+	 --flex-color: #dbcab6;
+	 --figure-color: #f9efe3 url(../images/rausch.png) repeat;
+	 --figureborder-color: #f0dec8;
+	 --copyright-color: #1b1309;
+	 --blogdate-color: #f9efe3;
+	 --intro-color: #dbcab6;
+}
+
+[data-theme="dark"] {
+	 --primary-color: #e6e6e6;
+	 --secondary-color: #818cab;
+	 --font-color: #e1e1ff;
+	 --title-color: #f07272;
+	 --h4-color: #a3a3a3;
+	 --h5-color: #a3a3a3;
+	 --h6-color: #f07272;
+	 --bg-color: #212124;
+	 --header-color: #121212;
+	 --flex-color: #18191A;
+	 --figure-color: #2e2e2e;
+	 --figureborder-color: #f07272;
+	 --copyright-color: #2e2e2e;
+	 --blogdate-color: #c0c0c0;
+	 --intro-color: #2e2e2e;
+}
+
 /* Main Container */
 img, embed, object, video {
 	max-width: 100%
@@ -65,13 +101,15 @@ div.blankSeparator2 {
 /****************************** HOME - Content Part - Logo&Menu ******************************/
 /* Header - Logo & Menu */
 #header {
-	background:#261b0d url(../images/rausch.png) repeat;
+	background: var(--header-color) url(../images/rausch.png) repeat;
 	margin-top:0px;
 	border-bottom:1px solid #1d1b18;
 }
 .logo {
 	float: left;
 	padding-top:25px;
+	opacity: 0.6;
+
 }
 .mainmenu {
 	float:right;
@@ -132,7 +170,7 @@ ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul {
 	padding:45px 15px 45px 15px;
 	text-decoration:none;
 	text-transform:uppercase;
-	color: #fbe6cb;
+	color: #f07272;
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
@@ -208,12 +246,16 @@ a:focus > .sf-sub-indicator, a:hover > .sf-sub-indicator, a:active > .sf-sub-ind
 	padding: 0;
 	list-style: none;
 }
+
+
+
 /* FlexSlider Necessary Styles
 *********************************/
 .flexslider {
 	padding: 0 0 10px 0;
-	background:#dbcab6 url(../images/bg/caption1.png) repeat;
+	background: var(--flex-color);
 	border-top:1px solid #e8ded1;
+
 }
 .flexslider .slides > li {
 	display: none;
@@ -221,6 +263,7 @@ a:focus > .sf-sub-indicator, a:hover > .sf-sub-indicator, a:active > .sf-sub-ind
 } /* Hide the slides before the JS is loaded. Avoids image jumping */
 .flexslider .slides img {
 	display: block;
+
 }
 .flex-pauseplay span {
 	text-transform: capitalize;
@@ -251,6 +294,7 @@ html[xmlns] .slides {
 .flexslider {
 	position: relative;
 	zoom: 1;
+
 }
 .flexslider .slides {
 	zoom: 1;
@@ -447,7 +491,7 @@ span.pink {
 	padding:20px 0 0 0;
 }
 .socialsblock {
-	background:url(../images/bg/lightpaperfibers.png) repeat;
+	color: black;
 }
 .socialize {
 	text-align:center;
@@ -464,8 +508,8 @@ span.pink {
 	border-bottom:1px dashed #c7b3a9;
 }
 .latest figure {
-	background:#f9efe3 url(../images/rausch.png) repeat;
-	border-top:4px solid #f0dec8;
+	background: var(--figure-color);
+	border-top:4px solid var(--figureborder-color);
 	-webkit-border-bottom-right-radius: 5px;
 	-webkit-border-bottom-left-radius: 5px;
 	-moz-border-radius-bottomright: 5px;
@@ -552,7 +596,7 @@ p.quote {
 }
 /****************************** Footer ******************************/
 .footer {
-	background:#261b0d url(../images/rausch.png) repeat;
+	background:var(--header-color) url(../images/rausch.png) repeat;
 	padding:20px 0px;
 }
 
@@ -627,7 +671,7 @@ ul.socials li {
 }
 /****************************** Copyright ******************************/
 #copyright {
-	background:#1b1309;
+	background: var(--copyright-color);
 	border-top:1px solid #000;
 }
 p.copyright {
@@ -642,13 +686,14 @@ p.copyright a {
 }
 ul.socials {
 	margin-top:10px;
+	opacity: 0.2;
 }
 ul.socials li {
 	display:inline-block;
 }
 /****************************** Breadcrumbs ******************************/
 .breadcrumbs {
-	background:url(../images/bg/lightpaperfibers.png) repeat;
+	background: var(--intro-color);
 	padding:20px 0 0 0;
 	margin-bottom:40px;
 }
@@ -851,7 +896,7 @@ img.testimonialsimage {
 	position: relative;
 	font-size: 18px;
 	line-height:50px;
-	background:#dbcab6 url(../images/bg/caption2.png) repeat;
+	background:var(--flex-color);
 }
 .view h2 a {
 	color: #543d1f;
@@ -1030,7 +1075,7 @@ p.gallery {
 	position: absolute;
 	left: -20px;
 	margin-top:-100px;
-	background:#f9efe3 url(../images/rausch.png) repeat;
+	background:var(--blogdate-color) url(../images/rausch.png) repeat;
 	width:70px;
 	height:70px;
 	color: #543d1f;

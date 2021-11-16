@@ -30,6 +30,46 @@ Oranssi #ebd8c0
 	#Forms
 	#Misc */
 
+	:root {
+		 --primary-color: #2d2010;
+		 --secondary-color: #536390;
+		 --font-color: #424242;
+		 --title-color: #261b0d;
+		 --h4-color: #543d1f;
+		 --h5-color: #543d1f;
+		 --h6-color: #fff;
+		 --bg-color: #fff;
+		 --flex-color: #dbcab6;
+		 --header-color: #261b0d;
+		 --figure-color: #f9efe3 url(../images/rausch.png) repeat;
+		 --figureborder-color: #f0dec8;
+		 --copyright-color: #1b1309;
+		 --blogdate-color: #f9efe3;
+		 --intro-color: #dbcab6;
+		 --tabhover-color: #33c4ff;
+		 --tabactive-color: #f4eade;
+	}
+
+	[data-theme="dark"] {
+		 --primary-color: #e6e6e6;
+		 --secondary-color: #818cab;
+		 --font-color: #e1e1ff;
+		 --title-color: #f07272;
+		 --h4-color: #a3a3a3;
+		 --h5-color: #a3a3a3;
+		 --h6-color: #f07272;
+		 --bg-color: #fff;
+		 --flex-color: #dbcab6;
+		 --header-color: #121212;
+		 --figure-color: #2e2e2e;
+		 --figureborder-color: #f07272;
+		 --copyright-color: #2e2e2e;
+		 --blogdate-color: #c0c0c0;
+		 --intro-color: #2e2e2e;
+		 --tabhover-color: #f07272;
+		 --tabactive-color: #c0c0c0;
+
+	}
 
 /* #Reset & Basics (Inspired by E. Meyers)
 ================================================== */
@@ -52,24 +92,23 @@ body {
 ol, ul {
 	list-style: none;
 }
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after, q:before, q:after {
-	content: '';
-	content: none;
-}
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
     text-align: center;
     background-color:#fff;
+		color: var(--font-color);
 
+
+}
+td {
+  background: var(--bg-color);
 
 }
 td img {
     vertical-align:middle;
-
+  background: var(--bg-color);
 }
 
 tr{
@@ -79,7 +118,7 @@ tr{
 th {
   position: sticky;
   top: 0px;
-  background: #2d2010;
+  background: var(--header-color);
   color: #fbe6cb;
 }
 .humans { display: none !important }
@@ -97,6 +136,77 @@ th {
     clip: rect(0,0,0,0);
     border: 0;
 }
+
+/* Darktheme stuff
+================================================== */
+
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 0;
+}
+
+
+/*slider switch css */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+
+  em {
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+}
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display:none !important
+}
+
+.slideri {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slideri:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+}
+
+input:checked + .slideri {
+  background-color: #f07272;
+}
+
+input:checked + .slideri:before {
+  transform: translateX(26px);
+}
+
+.slideri.round {
+  border-radius: 34px;
+}
+
+.slideri.round:before {
+  border-radius: 50%;
+}
+
 
 /* hämykuva */
 #spider img {
@@ -145,7 +255,7 @@ div#popup { display: none; }
 
 /*kuvat*/
 
-#kuva a.small, #picture a.small:visited { display:block;  text-decoration:none; background:#ffffff; top:0; left:0; border:0;}
+#kuva a.small, #picture a.small:visited { display:block;  text-decoration:none; background: var(--bg-color); top:0; left:0; border:0;}
 #kuva a img {border:0;}
 
 #kuva a .large {display:block; position:absolute; width:0; height:0; border: 0; top:0; left:0;}
@@ -180,66 +290,55 @@ th, td #tehut {
 	border-bottom: 1px solid #ddd;
 }
 
-
-/* Sivupaneeli*/
-.navibar {
+/* Sielunratsastus tabit */
+.tab {
   overflow: hidden;
-  background-color: #ebd8c0;
-  position: sticky;
-top:0;
-left: 40%;
-  width: 43vh;
-	z-index: 5;
+  border: none;
+  background-color: var(--bg-color);
 }
 
-.navibar a {
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: var(--flex-color);
+  color: var(--font-color);
   float: left;
-  display: block;
-  color: #000000;
-  text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
   padding: 14px 16px;
-  text-decoration: none;
-  font-size: 15px;
-}
+  transition: 0.3s;
+  font-size: 17px;
+  font-family:'Oswald', serif;
+  text-transform: uppercase;
 
-.navibar a:visited {
-color: #000000;
-}
-
-.navibar a:hover {
-  background: #ffffff;
 
 }
 
-/* Sivupaneeli 2*/
-.navibar2 {
-  overflow: hidden;
-  background-color: #ebd8c0;
-  position: sticky;
-top:0;
-left: 38%;
-  width: 50vh;
-	z-index: 5;
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: var(--tabhover-color);
 }
 
-.navibar2 a {
-  float: left;
-  display: block;
-  color: #000000;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 15px;
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: var(--tabactive-color);
+  color: black;
 }
 
-.navibar2 a:visited {
-color: #000000;
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+
+  background-color: var(--bg-color);
+  border-top: none;
 }
 
-.navibar2 a:hover {
-  background: #ffffff;
-
+.checked {
+  color: orange;
 }
+
+
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 div.content {
   margin-right: 200px;
@@ -272,18 +371,20 @@ div.content {
 body {
 	font: 12px Arial, Helvetica, sans-serif;
 	line-height: 20px;
-	color: #2d2010;
+	color: var(--font-color);
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;
 	overflow-x: hidden;
 }
 html {
-	background:#fff;
+
+	background-color: var(--bg-color);
+ 	color: var(--font-color);
 /*overflow-x: hidden;*/ }
 /* #Typography
 ================================================== */
 h1, h2, h3, h4, h5, h6 {
-	color: #261b0d;
+	color: var(--title-color);
 	font-family:'Oswald', serif;
 	font-weight: normal;
 	text-transform:uppercase;
@@ -308,26 +409,27 @@ h4 {
 	font-size: 18px;
 	margin-bottom: 10px;
 	text-transform:capitalize;
-	color: #543d1f;
+	color: var(--h4-color);
 }
 h5 {
 	font-size: 15px;
 	margin-bottom: 10px;
-	color: #543d1f;
+	color: var(--h5-color);
 }
 h6 {
 	font-size: 14px;
 	margin-bottom: 10px;
+	color: var(--h6-color);
 }
 .subheader {
 	color: #261b0d;
 }
 p {
-	color: #2d2010;
+ color: var(--primary-color);
 	line-height:1.5em;
 	font-size:14px;
 	margin: 0 0 15px 0;
-	text-shadow: 1px 1px 0 #fff;
+
 	font-family: Arial, Helvetica, sans-serif;
 }
 p.last {
@@ -354,36 +456,6 @@ strong {
 }
 small {
 	font-size: 80%;
-}
-/*	Blockquotes  */
-blockquote, blockquote p {
-	font-size: 14px;
-	line-height: 24px;
-	color: #cdcdcd;
-	font-style: italic;
-}
-blockquote {
-	margin: 0 0 0px;
-	padding: 0;
-	border-right: 1px solid #796172;
-}
-blockquote cite {
-	display: block;
-	font-size: 12px;
-	color: #cdcdcd;
-}
-blockquote cite:before {
-	content: "\2014 \0020";
-}
-blockquote cite a, blockquote cite a:visited, blockquote cite a:visited {
-	color: #cdcdcd;
-}
-hr {
-	border: solid #ddd;
-	border-width: 1px 0 0;
-	clear: both;
-	margin: 10px 0 30px;
-	height: 0;
 }
 
 /* Text Selection */
@@ -427,27 +499,32 @@ label, legend {
 	display: block;
 	font-weight: bold;
 	font-size: 13px;
+	color: var(--font-color);
+
 }
 input[type="checkbox"] {
 	display: inline;
+
 }
+
 label span, legend span {
 	font-weight: normal;
 	font-size: 13px;
 	color: #444;
+
 }
 input[type="text"], input[type="password"], input[type="email"], textarea, select {
 	padding: 10px 10px;
 	outline: none;
 	overflow: hidden;
 	font: 12px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	color: #261b0d;
+	color: var(--font-color);
 	margin: 0;
 	width: 198px;
 	max-width: 100%;
 	display: block;
 	margin-bottom: 10px;
-	background: #eee;
+	background: var(--figure-color);
 }
 select {
 	padding: 0;
@@ -455,6 +532,7 @@ select {
 input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, textarea:focus {
 	border: 1px solid #bbb;
 	color: #555;
+
 }
 textarea {
 	min-height: 100px;
@@ -462,6 +540,8 @@ textarea {
 select {
 	width: 220px;
 }
+
+
 /* Header Responsive Menu Form Style */
 
 .header form {

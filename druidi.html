@@ -28,59 +28,9 @@
 <link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="css/skeleton.css">
 <link rel="stylesheet" href="css/screen.css">
+<link rel="stylesheet" href="css/lightbox.css">
 <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" />
 
-<style>
-body {font-family: Arial;}
-
-/* Style the tab */
-.tab {
-  overflow: hidden;
-  border: none;
-  background-color: #f1f1f1;
-}
-
-/* Style the buttons inside the tab */
-.tab button {
-  background-color: #3171dc;
-  color: white;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;
-  font-family:'Oswald', serif;
-  text-transform: uppercase;
-
-
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #33c4ff;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
-  color: black;
-}
-
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  background-color: #dbdedf;
-  border-top: none;
-}
-
-.checked {
-  color: orange;
-}
-</style>
 <!-- Favicons ==================================================
 ================================================== -->
 
@@ -122,7 +72,20 @@ body {font-family: Arial;}
                 <li><a href="halloween.html">Halloween</a></li>
             </ul>
             </li>
-              <!--     <li><a href="palaute.html">Palaute</a></li> -->
+              <li>
+    <div id="languagemenu">
+  <nav>
+<div class="theme-switch-wrapper">
+     <label class="theme-switch" for="checkbox">
+  <input type="checkbox" id="checkbox" />
+  <div class="slideri round"></div>
+</label>
+  <h6> Vaihda teema!</h6>
+</div>
+</nav>
+</div>
+</li>
+<!--     <li><a href="palaute.html">Palaute</a></li> -->
         </ul>
       </div>
       <!-- mainmenu ends here -->
@@ -188,7 +151,7 @@ Voit valita tietäjien hevoshaan ilmoitustaululta erityisiä harjoituksia, ja ku
 
   <tr>
   <td>
-  <img src="images/druidi/tarkkuus.jpg" alt="tarkkuus" />
+  <img src="images/druidi/tarkkuus.jpg" alt="tarkkuus" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"/>
   </td>
   <td>
     <h3>Tarkkuusratsastus</h3>
@@ -206,7 +169,8 @@ Tarkkuusratsastuksessa tehtävänäsi on ratsastaa annetut reitit nuolia seuraam
 
   <tr>
   <td>
-  <img src="images/druidi/estekaruselli.jpg" alt="estekaruselli" />
+
+  <img src="images/druidi/estekaruselli.jpg" alt="estekaruselli" onclick="openModal();currentSlide(2)" class="hover-shadow cursor" />
   </td>
   <td>
     <h3>Estekaruselli</h3>
@@ -223,7 +187,7 @@ Estekarusellissa tehtävänäsi on ratsastaa kehää ympäri esteitä hypäten j
 
   <tr>
   <td>
-  <img src="images/druidi/ratsastusreitti.jpg" alt="estekaruselli" />
+  <img src="images/druidi/ratsastusreitti.jpg" alt="reittiratsastus" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" />
   </td>
   <td>
     <h3>Ratsastusreitin vaihtaminen</h3>
@@ -240,7 +204,7 @@ Tehtävänäsi on ratsastaa merkityllä reitillä ja vaihtaa reittiä kun kuulet
 
   <tr>
   <td>
-  <img src="images/druidi/varjot.jpg" alt="varjot" />
+  <img src="images/druidi/varjot.jpg" alt="varjot" onclick="openModal();currentSlide(4)" class="hover-shadow cursor"/>
   </td>
   <td>
     <h3>Varjojen välttely</h3>
@@ -258,7 +222,7 @@ Tehtävänäsi on ratsastaa merkityllä reitillä ja vaihtaa reittiä kun kuulet
 
   <tr>
   <td>
-  <img src="images/druidi/kohde.jpg" alt="kohde" />
+  <img src="images/druidi/kohde.jpg" alt="kohde" onclick="openModal();currentSlide(5)" class="hover-shadow cursor"/>
   </td>
   <td>
     <h3>Kohteen perässä pysyminen</h3>
@@ -276,7 +240,7 @@ Tehtävänäsi on ratsastaa merkityllä reitillä ja vaihtaa reittiä kun kuulet
 
   <tr>
   <td>
-  <img src="images/druidi/haamuvalot.jpg" alt="haamuvalot" />
+  <img src="images/druidi/haamuvalot.jpg" alt="haamuvalot" onclick="openModal();currentSlide(6)" class="hover-shadow cursor"/>
   </td>
   <td>
     <h3>Haamuvalojen kerääminen</h3>
@@ -294,7 +258,7 @@ Tehtävänäsi on ratsastaa merkityllä reitillä ja vaihtaa reittiä kun kuulet
 
   <tr>
   <td>
-  <img src="images/druidi/salamat.jpg" alt="salamat" />
+  <img src="images/druidi/salamat.jpg" alt="salamat" onclick="openModal();currentSlide(7)" class="hover-shadow cursor"/>
   </td>
   <td>
     <h3>Salamoiden väistely</h3>
@@ -312,7 +276,7 @@ Tehtävänäsi on ratsastaa merkityllä reitillä ja vaihtaa reittiä kun kuulet
 
   <tr>
   <td>
-  <img src="images/druidi/aallot.jpg" alt="aallot" />
+  <img src="images/druidi/aallot.jpg" alt="aallot" onclick="openModal();currentSlide(8)" class="hover-shadow cursor"/>
   </td>
   <td>
     <h3>Paineaaltojen väistely</h3>
@@ -330,7 +294,7 @@ Tehtävänäsi on ratsastaa merkityllä reitillä ja vaihtaa reittiä kun kuulet
 
   <tr>
   <td>
-  <img src="images/druidi/merkit.jpg" alt="symboli" />
+  <img src="images/druidi/merkit.jpg" alt="symboli" onclick="openModal();currentSlide(9)" class="hover-shadow cursor"/>
   </td>
   <td>
     <h3>Valitse symboli</h3>
@@ -346,6 +310,65 @@ Tehtävänäsi on ratsastaa merkityllä reitillä ja vaihtaa reittiä kun kuulet
   </td>
   </tr>
 
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+      <div class="mySlides">
+        <div class="numbertext">1 / 9</div>
+        <img src="images/druidi/tarkkuus.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 9</div>
+        <img src="images/druidi/estekaruselli.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 9</div>
+        <img src="images/druidi/ratsastusreitti.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 9</div>
+        <img src="images/druidi/varjot.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 9</div>
+        <img src="images/druidi/kohde.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 9</div>
+        <img src="images/druidi/haamuvalot.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">7 / 9</div>
+        <img src="images/druidi/salamat.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">8 / 9</div>
+        <img src="images/druidi/aallot.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">9 / 9</div>
+        <img src="images/druidi/merkit.jpg" style="width:100%">
+      </div>
+
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+    </div>
+  </div>
+
 
 </table>
   </div>
@@ -355,6 +378,7 @@ Tehtävänäsi on ratsastaa merkityllä reitillä ja vaihtaa reittiä kun kuulet
 
   <tr>
   <td>
+
   <img src="images/druidi/virvatulet.jpg" alt="virvatulet" />
   </td>
   <td>
@@ -529,7 +553,6 @@ Tehtävänäsi on kerätä 25 leijupinjaa ennen kuin aika kuluu umpeen. Etsi lei
       <br><br>Epäonnistut tehtävässä mikäli et saa neljääkymmentä rauskua kerättyä annetun ajan puitteissa. Ensimmäinen osuma varjoon saa sen seuraamaan sinua, toisella iskulla menetät 20 sekuntia.
     </td>
   </tr>
-
 
   </table>
   </div>
@@ -921,7 +944,7 @@ Riimukirmaaja
     <section class="socials">
       <ul class="socials">
         <li><a href="#"><img src="images/socials/twitter.png" alt="" /></a></li>
-        <li><a href="#"><img src="images/socials/facebook.png" alt="" /></a></li>
+        <li><a href="https://www.facebook.com/ssosuomi"><img src="images/socials/facebook.png" alt="" /></a></li>
         <li><a href="#"><img src="images/socials/youtube.png" alt="" /></a></li>
       </ul>
     </section>
@@ -1018,6 +1041,10 @@ document.getElementById("defaultOpen").click();
 <script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
 <!-- Modernizr -->
 <script type="text/javascript" src="js/modernizr.custom.29473.js"></script>
+<script type="text/javascript" src="js/toggleswitch.js"></script>
+
+<!-- Lightbox-->
+<script src="js/lightbox.js" type="text/javascript"></script>
 
 <script type="text/javascript" id="cookieinfo"
 	src="js/cookieinfo.min.js"
