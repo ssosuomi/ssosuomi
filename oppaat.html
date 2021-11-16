@@ -6,6 +6,30 @@
 <html lang="en">
 <!--<![endif]-->
 <head>
+  <head>
+
+    <style>
+      body {
+        visibility: hidden;
+        opacity: 0;
+
+      }
+    </style>
+    <script>
+    function showTheme() {
+    // Check Local Storage then apply dark theme if it's active
+  }
+
+  function showContent() {
+    document.body.style.visibility = 'visible';
+    document.body.style.opacity = 1;
+  }
+
+  window.addEventListener('DOMContentLoaded', function () {
+    showTheme();
+    showContent();
+  });
+    </script>
 
 <!-- Basic Page Needs ==================================================
 ================================================== -->
@@ -266,6 +290,7 @@
 ================================================== -->
 <!-- Scripts ==================================================
 ================================================== -->
+<script type="text/javascript" src="js/toggleswitch.js"></script>
 <script src="js/jquery-1.8.0.min.js" type="text/javascript"></script>
 <!-- Main js files -->
 <script src="js/screen.js" type="text/javascript"></script>
@@ -280,7 +305,7 @@
 <script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
 <!-- Modernizr -->
 <script type="text/javascript" src="js/modernizr.custom.29473.js"></script>
-<script type="text/javascript" src="js/toggleswitch.js"></script>
+
 
 <script type="text/javascript" id="cookieinfo"
 	src="js/cookieinfo.min.js"
@@ -295,5 +320,13 @@
   data-close-text="Selvä!">
 </script>
 
+<noscript>
+  <style>
+    body {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</noscript>
 </body>
 </html>

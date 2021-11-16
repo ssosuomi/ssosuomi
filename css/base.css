@@ -373,6 +373,7 @@ body {
 	font: 12px Arial, Helvetica, sans-serif;
 	line-height: 20px;
 	color: var(--font-color);
+	background: var(--bg-color);
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;
 	overflow-x: hidden;
