@@ -657,11 +657,7 @@ height: 0;
 
 
 @media only screen and (max-width: 767px) {
-#languagemenu {
-visibility: hidden;
-display: none;
 
-}
 }
 #languagemenu{
 	position: absolute;
