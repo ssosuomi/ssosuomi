@@ -150,14 +150,13 @@ nav {
 
 
 /*slider switch css */
+
 .theme-switch-wrapper {
-  display: flex;
+  display: inline-block;
+	margin-left: 20px;
+
   align-items: center;
 
-  em {
-    margin-left: 10px;
-    font-size: 1rem;
-  }
 }
 .theme-switch {
   display: inline-block;
@@ -172,6 +171,7 @@ nav {
 
 .slideri {
   background-color: #ccc;
+	color: red;
   bottom: 0;
   cursor: pointer;
   left: 0;
@@ -214,6 +214,12 @@ input:checked + .slideri:before {
   border-radius: 50%;
 }
 
+@media only screen and (max-width: 800px) {
+	.theme-switch-wrapper {
+	  display: flex;
+		margin-left: 110px;
+	}
+}
 
 /* hämykuva */
 #spider img {

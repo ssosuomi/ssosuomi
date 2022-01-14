@@ -13,10 +13,6 @@ div.gallery {
 
 }
 
-* {
-  box-sizing: border-box;
-}
-
 .row > .column {
   padding: 0 8px;
 }
@@ -36,7 +32,7 @@ div.gallery {
 .modal {
   display: none;
   position: fixed;
-  z-index: 7;
+  z-index: 9999;
   padding-top: 100px;
   left: 0;
   top: 0;

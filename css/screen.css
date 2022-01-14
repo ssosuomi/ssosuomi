@@ -107,7 +107,8 @@ div.blankSeparator2 {
 }
 .logo {
 	float: left;
-	padding-top:25px;
+	padding-top:0px;
+	padding-left: 15px;
 	opacity: 0.6;
 
 }
@@ -180,7 +181,7 @@ ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul {
 .sf-menu li a:hover { /* visited pseudo selector so IE6 applies text colour*/
 	color:#fff;
 }
-li a#visited {
+.sf-menu li a#visited {
 	border-bottom:3px solid #e8ded1;
 	color:#fff;
 }
@@ -256,6 +257,7 @@ a:focus > .sf-sub-indicator, a:hover > .sf-sub-indicator, a:active > .sf-sub-ind
 	padding: 0 0 10px 0;
 	background: var(--flex-color);
 	border-top:1px solid #e8ded1;
+	
 
 }
 .flexslider .slides > li {
