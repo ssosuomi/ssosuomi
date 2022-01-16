@@ -3,7 +3,9 @@ const currentTheme = getCookie('theme');
 //window.onload = function() {
 if (currentTheme) {
     document.documentElement.setAttribute('data-theme', currentTheme);
-  }
+  }else{
+    document.documentElement.setAttribute('data-theme', 'dark');
+}
 
 
   function setCookie(cname, cvalue, exdays) {
