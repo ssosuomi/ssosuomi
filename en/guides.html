@@ -18,6 +18,7 @@
 
   gtag('config', 'G-Q6DWG6D3N8');
 </script>
+<script type="text/javascript" src="../js/theme.js"></script>
 
 <!-- Basic Page Needs ==================================================
 ================================================== -->
@@ -60,68 +61,36 @@
   <div class="container">
     <!-- Header | Logo, Menu
 		================================================== -->
-    <div class="logo"><a href="index.html"><img src="../images/logo1.png" alt=""  /></a></div>
-    <div class="mainmenu">
-      <div id="mainmenu">
-        <ul class="sf-menu">
+    <nav class="responsive-nav">
+      <div id="menu" class="menu">
+
+  <a class="sitename" <a href="index.html"><img src="../images/logo1.png"> </a>
+
+        <a class="show" href="#menu">Menu</a><a class="hide" href="#hidemenu">Menu</a>
+        <ul class="menu-items">
           <li><a href="index.html">Index</a></li>
           <li><a href="spoilers.html">Spoilers</a></li>
-        <!--   <li><a href="blog.html">Uutiset</a></li> -->
           <li><a href="horses.html">Horses</a></li>
-          <li><a href="guides.html" id="visited">Guides</a>
-            <ul>
-            <li><a href="stars.html">Stars</a></li>
-            <!--     <li><a href="paikat.html">Paikat</a></li> -->
-                <li><a href="memories.html">Memories</a></li>
-                  <li><a href="tokens.html">Tokens</a></li>
-                    <li><a href="spiders.html">Spiders</a></li>
-                <li><a href="druid.html">Soulriding</a></li>
-                <li><a href="donkeys.html">Lost donkeys</a></li>
-                  <li><a href="brissie.html">Brissie</a></li>
-                <li><a href="halloween.html">Halloween</a></li>
-            </ul>
-            </li>
-      <li>
-    <div id="languagemenu">
-  <nav>
-<div class="theme-switch-wrapper">
-     <label class="theme-switch" for="checkbox">
-  <input type="checkbox" id="checkbox" />
-  <div class="slideri round"></div>
-</label>
-  <h6> Vaihda teema!</h6>
-</div>
-</nav>
-</div>
-</li>
-<!--     <li><a href="palaute.html">Palaute</a></li> -->
-        </ul>
-      </div>
-      <div id="languagemenu">
-       <a href="../index.html"><img src="../images/fi.jpg" width="50" height="30"></a>
-      <a href="index.html"><img src="../images/eng.jpg" width="50" height="30">
-      </div>
-      <!-- mainmenu ends here -->
-      <div class="dropdown">
-        <button class="dropbtn">Language</button>
-        <div class="dropdown-content">
-          <a href="index.html">English</a>
-          <a href="../index.html">Suomi</a>
+          <li><a href="guides.html"id="visited">Guides</a></li>
 
-        </div>
+          <li>
+          <div class="theme-switch-wrapper">
+               <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slideri round"></div>
+          </label>
+
+          </div>
+        </li>
+
+        <li>
+      <a href="../index.html"><img src="../images/fi.jpg" width="50" height="30"></a>
+      <a href="index.html"><img src="../images/eng.jpg" width="50" height="30">
+      </li>
+      </ul>
       </div>
-      <!-- Responsive Menu -->
-      <form id="responsive-menu" action="#" method="post">
-        <select>
-          <option value="">Navigation</option>
-          <option value="index.html">Index</option>
-            <option value="spoilers.html">Spoilers</option>
-          <option value="horses.html">Horses</option>
-          <option value="guides.html">Guides</option>
-        <!--   <option value="palaute.html">Palaute</option> -->
-        </select>
-      </form>
-    </div>
+    </nav>
+
     <!-- mainmenu ends here -->
   </div>
   <!-- container ends here -->
@@ -300,5 +269,7 @@ function myFunction() {
 <script src="../js/jquery.flexslider-min.js" type="text/javascript"></script>
 <!-- Modernizr -->
 <script type="text/javascript" src="../js/modernizr.custom.29473.js"></script>
+<!-- Theme switch -->
+<script type="text/javascript" src="../js/toggleswitch.js"></script>
 </body>
 </html>
