@@ -18,13 +18,13 @@ else {
 function switchTheme(e) {
     if (e.target.checked) {
         document.documentElement.setAttribute('data-theme', 'dark');
-        if (getCookie('cky-consent') == 'yes' && getCookie('cookieyes-performance') == 'yes') {
+        if (getCookie('cky-consent') == 'yes' && getCookie('cookieyes-functional') == 'yes') {
           setCookie('theme', 'dark', 30)
         }
     }
     else {
       document.documentElement.setAttribute('data-theme', 'light');
-      if (getCookie('cky-consent') == 'yes' && getCookie('cookieyes-performance') == 'yes') {
+      if (getCookie('cky-consent') == 'yes' && getCookie('cookieyes-functional') == 'yes') {
         setCookie('theme', 'light', 30)
       }
     }
