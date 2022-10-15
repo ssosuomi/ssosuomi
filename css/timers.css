@@ -1,14 +1,17 @@
 .timecontainer{
-  margin:100px auto;
+  margin: 70px auto;
   width:809px;
   display: flex;
   justify-content: center;
 }
 
+
+
 .lighttimer{
   background-color: rgb(253, 251, 251);
   box-sizing:border-box;
 }
+
 
 
 .calendar{
@@ -105,3 +108,10 @@
     color:#000;
   }
   
+  @media only screen and (max-width: 767px) {
+    .lighttimer{
+   
+   margin-right: 60%;
+   
+   }
+  }
