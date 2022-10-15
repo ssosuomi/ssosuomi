@@ -31,6 +31,7 @@
 <meta charset="utf-8">
 <title>SSO Suomi Halloweenin tornado-aikataulut</title>
 <meta name="robots" content="follow" />
+<meta http-equiv="refresh" content="60" />
 <!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -63,7 +64,8 @@
 <body onload="datecheck()">
     <script>
         function datecheck(){
-        const now=new Date(); 
+        const fi = new Date().toLocaleString("en-US", { timeZone: "Europe/Helsinki" });
+        now = new Date(fi); 
         $("#d_" + now.getDay()).css("display", "block")
         $("#cl_copy").html($("#d_"+ now.getDay() + " #" + now.getHours() + " .ei_Copy").text())
             
@@ -127,7 +129,7 @@
     <div class="calendar lighttimer">
       <div class="calendar_header">
         <h1 class="header_title">Aikataulut</h1>
-        <p class="header_copy"> </p>
+        <p>Lista päivittyy automaattisesti minuutin välein </p>
       </div>
       <div class="calendar_plan">
         <div class="cl_plan">
